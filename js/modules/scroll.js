@@ -1,4 +1,5 @@
-const arr = document.querySelectorAll('.anchor');
+(function() {
+  const arr = document.querySelectorAll('.anchor');
 
 for (let anchor of arr) {
   anchor.addEventListener('click', function (e) {
@@ -11,4 +12,5 @@ for (let anchor of arr) {
       block: 'start'
     })
   })
-}
+  }
+}())
