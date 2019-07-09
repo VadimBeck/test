@@ -44,24 +44,22 @@
 .footer__list {
   display: flex;
   font-size: rem(12px);
-  @include phones {
+  @include tablets {
     flex-wrap: wrap;    
   }
 }
 .footer__col {
   width: 25%;
+  margin-bottom: rem(10px);
   &:last-child {
     text-align: end;
-    padding-right: rem(20px)
   }
-  @include phones {
+  @include tablets {
     width: 50%;
-  }
-  &:last-child {
-    width: 20%;
-    @include tablets {
-      width: 50%;
-      padding-right: 15%;
+  }  
+  &:nth-child(2n) {
+    @include tablets {      
+      text-align: end;
     }
   }
 }
@@ -74,4 +72,7 @@
 }
 .footer__autor-img {
   margin-bottom: rem(10px);
+}
+.footer__address {
+  font-style: normal;
 }
