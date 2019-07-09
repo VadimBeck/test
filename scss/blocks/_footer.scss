@@ -1,0 +1,77 @@
+.footer {
+  padding: rem(20px) 0;
+  background-color: $grey;
+  color: $lightGrey;
+}
+.footer__invite {
+  background-color: #fff;
+  color: $darkGrey;
+  padding: rem(50px) rem(50px) rem(80px);
+  position: relative;
+  top: -80px;
+  font-family: 'Didot';
+  font-style: italic;
+}
+.footer__invite-title {
+  font-size: rem(36px);  
+}
+.footer__invite-line {
+  width: 32%;
+  border-bottom: 1px solid $orange;
+  margin: rem(20px) 0 rem(30px);
+  position: relative;
+  &::before, &:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: $orange;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px $orange;
+    transform: rotate(45deg);    
+    top: -5px;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+}
+.footer__invite-text {
+  font-size: rem(18px);
+}
+.footer__list {
+  display: flex;
+  font-size: rem(12px);
+  @include phones {
+    flex-wrap: wrap;    
+  }
+}
+.footer__col {
+  width: 25%;
+  &:last-child {
+    text-align: end;
+    padding-right: rem(20px)
+  }
+  @include phones {
+    width: 50%;
+  }
+  &:last-child {
+    width: 20%;
+    @include tablets {
+      width: 50%;
+      padding-right: 15%;
+    }
+  }
+}
+.footer__subtitle {
+  text-transform: uppercase;
+  margin-bottom: rem(10px);
+}
+.footer__info {
+  margin-bottom: rem(10px);
+}
+.footer__autor-img {
+  margin-bottom: rem(10px);
+}

@@ -1,0 +1,5 @@
+.content__block {
+  &:nth-child(2n) {
+    background-color: $beige;
+  }
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Didot', serif;
+  src: url('../fonts/Didot-Italic.woff2') format('woff2'),
+       url('../fonts/Didot-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Myriad Pro', sans-serif;
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

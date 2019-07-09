@@ -1,0 +1,25 @@
+.section__header {
+  color: #fff;
+  background-color: $grey;
+  padding: rem(15px) 0 rem(30px);
+  margin-bottom: rem(30px)
+}
+.section__title {
+  text-align: center;
+  padding-bottom: rem(10px);
+  border-bottom: 1px solid $orange;
+  position: relative;
+  font-size: rem(36px);
+  font-family: 'Didot';
+  font-style: italic;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: $orange;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

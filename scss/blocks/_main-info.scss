@@ -1,0 +1,51 @@
+.main-info {
+  padding-bottom: rem(50px);
+  text-transform: uppercase;
+  position: relative;
+  max-width: 80%;
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #fff;    
+    transform: rotate(-45deg);    
+  }
+  &::before {
+    width: 55%;
+    top: -50%;
+    left: 45%;
+  }
+  &::after {
+    width: 35%;
+    bottom: -9%;
+    left: -1%;    
+  }
+}
+.main-info__title {
+  font-size: rem(62px);
+  font-weight: $boldFont;
+  position: relative;
+}
+.main-info__contacts {
+  margin-left: rem(100px);
+  position: relative;
+  font-style: normal;
+  font-size: rem(12px);
+  font-weight: $boldFont;
+  letter-spacing: 0.1em;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -100px;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+  }
+}
+.main-info__wave {
+  width: 50px;
+  height: 10px;
+  left: rem(20px);
+  position: absolute;
+  background: url(../img/white.png) center center / contain no-repeat ;
+}

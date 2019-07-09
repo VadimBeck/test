@@ -1,0 +1,23 @@
+.contacts {
+  @include flex (space-between, flex-start);
+  margin-bottom: rem(100px);
+  @include tablets {
+    flex-direction: column;
+  }
+}
+.contacts__form {
+  width: 50%;
+  padding-top: rem(20px);
+  @include tablets {
+    width: 80%;
+  }
+}
+.contacts__map {
+  margin-top: rem(30px);
+  padding: rem(10px);
+  border: 1px solid $orange;
+  width: 50%;
+  @include tablets {
+    width: 100%;
+  }
+}

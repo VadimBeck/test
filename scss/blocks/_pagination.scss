@@ -1,0 +1,29 @@
+.pagination {
+ display: flex;
+ margin-right: rem(60px);
+ @include tablets {
+  margin: rem(10px);
+ }
+}
+.pagination__link {
+  margin: rem(10px);
+  display: block;
+  width: 24px;
+  height: 8px;
+  position: relative;
+  transition: .3s;
+  &:hover, &.is-active {
+    border: 1px solid $beige;
+  }
+  &:after {
+    content: "";
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: $beige;
+    z-index: 0;
+  }
+}

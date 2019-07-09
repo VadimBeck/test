@@ -1,0 +1,32 @@
+.nav {
+  width: 90%;
+  max-width: 1005px;
+  @include tablets {
+    width: 100%;
+  }
+}
+.nav__list {
+  display: flex;
+  width: 100%;
+  font-size: rem(16px);
+  padding: 0 1px;
+}
+.nav__item {
+  transition: all ease .3s;
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1;
+  text-align: center;
+  border-left: 1px solid $lightGrey;
+  &:last-child {
+    border-right: 1px solid $lightGrey;
+  }
+  &.is-active, &:hover {
+    color: $grey;
+    background-color: #fff;
+  }
+}
+.nav__link {
+  display: block;
+  padding: rem(20px) 0;
+}
