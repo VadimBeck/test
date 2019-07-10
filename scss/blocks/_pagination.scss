@@ -6,6 +6,7 @@
  }
 }
 .pagination__item {
+  cursor: pointer;
   &.is-active .pagination__link, &:hover .pagination__link {
     border-color: $beige;
   }

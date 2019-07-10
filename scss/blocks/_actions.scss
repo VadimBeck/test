@@ -50,6 +50,12 @@
   width: calc(100%/3);
   flex-shrink: 0;  
   padding: 0 rem(50px);
+  @include laptop {
+    padding: 0 rem(20px);
+  }
+  @include tablets {
+    padding: 0 rem(10px);
+  }
 }
 .actions__item-inner {
   border: 1px solid $orange;
