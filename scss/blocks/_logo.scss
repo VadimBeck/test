@@ -4,3 +4,8 @@
 .logo__pic {
   max-width: 100%;
 }
+.logo__link {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}

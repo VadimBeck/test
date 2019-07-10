@@ -5,16 +5,19 @@
   margin: rem(10px);
  }
 }
+.pagination__item {
+  &.is-active .pagination__link, &:hover .pagination__link {
+    border-color: $beige;
+  }
+}
 .pagination__link {
   margin: rem(10px);
   display: block;
   width: 24px;
   height: 8px;
   position: relative;
+  border: 1px solid transparent;
   transition: .3s;
-  &:hover, &.is-active {
-    border: 1px solid $beige;
-  }
   &:after {
     content: "";
     width: 20px;
