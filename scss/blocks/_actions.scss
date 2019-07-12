@@ -2,9 +2,6 @@
   color: $orange;
   text-align: center;
 }
-.actions__title {
-  margin-bottom: rem(30px);
-}
 .actions__title-text {
   font-size: rem(36px);
   font-family: 'Didot';
@@ -39,6 +36,7 @@
   overflow: hidden;
 }
 .actions__list {
+  padding-top: rem(30px);
   width: 100%;
   position: relative;
   left: 0;
@@ -49,7 +47,7 @@
 .actions__item {
   width: calc(100%/3);
   flex-shrink: 0;  
-  padding: 0 rem(50px);
+  padding: 0 rem(45px);  
   @include laptop {
     padding: 0 rem(20px);
   }
@@ -60,6 +58,10 @@
 .actions__item-inner {
   border: 1px solid $orange;
   padding: rem(10px);
+  transition: all ease .5s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .actions__item-img {
   width: 100%;
